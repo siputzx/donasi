@@ -167,7 +167,7 @@
         function convertQRIS() {
             const qty = document.getElementById('nominalInput').value.trim();
 
-            if (!qty || isNaN(qty) || parseInt(qty)) {
+            if (!qty || isNaN(qty) || parseInt(qty) < 1) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Invalid Nominal',
